@@ -1,0 +1,27 @@
+body{
+	font-family: gotham, Helvetica, Aerial, Verdana, sans-serif;
+}
+
+#inputBox{
+	background-color: yellow;
+	float: left;
+	width: 300px;
+}
+
+
+#outputBox{
+	float: left;
+	width: 400px;
+}
+
+
+#EmailOutput,
+#phoneOutput,
+#ZipcodeOutput{
+	line-height: 26px;
+}
+
+/*submit button */
+#proceed{
+	width: 200px;
+}
