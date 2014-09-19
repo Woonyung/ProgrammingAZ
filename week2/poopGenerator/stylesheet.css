@@ -5,13 +5,13 @@ body{
 #inputBox{
 	/*background-color: yellow;*/
 	float: left;
-	width: 50%;
+	width: 450px;
 }
 
 
 #outputBox{
 	float: left;
-	width: 50%;
+	width: 400px;
 }
 
 textarea{
