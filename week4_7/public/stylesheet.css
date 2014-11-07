@@ -1,0 +1,133 @@
+/********************************************/
+/*for all of your input pages*/
+/********************************************/
+/* for hidden divs for assigning shapes */
+#r,#g,#b, #shapes{
+	visibility: hidden;
+	height: 1px;
+}
+
+/* load the font face from local machine */
+@font-face {
+    font-family: gotham-book;
+    src: url(fonts/Gotham-Book.otf);
+}
+
+body {
+    font-family: gotham-book;
+    color: #434343;
+}
+
+
+hr {
+	-moz-border-bottom-colors: none;
+	-moz-border-image: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+
+	border-color: #dddddd;
+	border-style: solid none;
+	border-width: 1px 0;
+	margin: 18px 0;
+
+	width: 800px;
+}
+
+
+
+#container{
+	margin : 100 0 0 100px;
+	/*background-color: red;*/
+}
+
+
+
+#header{
+	width: 700px;
+}
+
+
+#sketchPart{
+
+}
+
+	#showingShapes{
+		margin-top:-20px;
+	}
+
+
+/*typography*/
+#headerText{
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	font-size: 24px;
+}
+
+.description{
+	font-size:16px;
+}
+
+.caption{
+	font-size:14px;
+}
+	
+/*for textarea*/	
+.fields{
+	/*text-align: center;*/
+	width: 800px;
+	height: 200px;
+	background-color: #efefef;
+
+	/*round corner*/
+   	-moz-border-radius:5px; /* Firefox */
+   	-webkit-border-radius: 5px; /* Safari, Chrome */
+   	-khtml-border-radius: 5px; /* KHTML */
+   	border-radius: 5px; /* CSS3 */
+   	border-style: none;
+} 
+
+.Qs{
+	font-size: 14px;
+	text-align: left;
+	/*float:left;*/
+	padding-bottom: 20px;
+}
+
+
+#submit{
+	width: 800px;
+    height: 60px;
+
+    color: #fff;
+    border: 0px solid #006;
+    background: #61D988;
+    letter-spacing: .2em;
+
+
+	/*round corner*/
+   	-moz-border-radius:5px; /* Firefox */
+   	-webkit-border-radius: 5px; /* Safari, Chrome */
+   	-khtml-border-radius: 5px; /* KHTML */
+   	border-radius: 5px; /* CSS3 */
+   	border-style: none;
+}
+
+
+/********************************************/
+/* for all of your results pages */
+/********************************************/
+
+#label1{
+	/*color: red;*/
+	float: left;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+#label2{
+	/*color: green;*/
+	float: left;
+	margin : 0px 0px 0px 950px;
+	text-transform: uppercase;
+}

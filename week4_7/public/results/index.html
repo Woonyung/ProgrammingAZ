@@ -1,0 +1,89 @@
+<head>
+	<!-- libaries -->
+	<!-- p5 libraries -->
+	<script language="javascript" type="text/javascript" src="http://cdn.jsdelivr.net/p5.js/0.3.6/p5.min.js"></script>
+	<script language="javascript" type="text/javascript" src="http://cdn.jsdelivr.net/p5.js/0.3.6/addons/p5.dom.js"></script>
+	
+	<!--jQuery-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
+
+	<!-- underscore -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+	
+	<style>
+	</style>
+</head>
+<body>
+
+<div id="container">
+	<h1 id="headerText">Results</h1>
+	<p class="description">
+	DISCLAIMER: Again, this is not a diagnostic tool. <br>But, please find your shape below on the different scales amongst previous users' shapes. <br>The scales go from low to high on dimensions of psychopathy.</p> 
+	<br>
+	<br>
+
+	<!-- ===================== facet 1 ==================== -->
+	<text class="facets"><b>Facet 1: </b>Interpersonal</text>
+	<br>
+
+		<div class="result" id="facet1Results"></div>
+		<h6 id="label1">Low</h3>
+		<h6 id="label2">High</h3>
+	<br>
+	<br>
+	<!-- ===================== facet 2 ==================== -->
+	<text class="facets"><b>Facet 2: </b>Affective</text>
+	<br>
+
+		<div class="result" id="facet2Results"></div>
+		<h6 id="label1">Low</h3>
+		<h6 id="label2">High</h3>
+	<br>
+	<br>
+
+	<!-- ===================== facet 3 ==================== -->
+	<text class="facets"><b>Facet 3:</b> Lifestyle</text>
+	<br>
+
+		<div class="result" id="facet3Results"></div>
+		<h6 id="label1">Low</h3>
+		<h6 id="label2">High</h3>
+	<br>
+	<br>
+
+	<!-- ===================== facet 4 ==================== -->
+	<text class="facets"><b>Facet 4:</b> Antisocial</text>
+	<br>
+
+		<div class="result" id="facet4Results"></div>
+		<h6 id="label1">Low</h3>
+		<h6 id="label2">High</h3>
+
+	<br>
+	<br>
+
+	<!-- ===================== overall ==================== -->
+	<text class="facets"><b>Overall Probablilty:</b> </text>
+	<br>
+
+		<div class="result" id="overallResults"></div>
+		<h6 id="label1">Low</h3>
+		<h6 id="label2">High</h3>
+
+	<br>
+	<br>
+</div>
+
+<!-- ===================== comparative ==================== -->
+<!-- <text class="facets"><b>Comparative Visualization:</b> </text>
+<br>
+
+	<div class="result" id="groupResults"></div>
+ -->
+
+<!-- ====================================================== -->
+<!-- main javascript file -->
+<script src="main.js"></script>
+</body>

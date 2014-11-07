@@ -1,0 +1,115 @@
+<head>
+	<!-- libaries -->
+	<!-- p5 libraries -->
+	<script language="javascript" type="text/javascript" src="http://cdn.jsdelivr.net/p5.js/0.3.6/p5.min.js"></script>
+	<script language="javascript" type="text/javascript" src="http://cdn.jsdelivr.net/p5.js/0.3.6/addons/p5.dom.js"></script>
+	
+	<!--jQuery-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
+
+	<!-- stylesheet -->
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+<div id="container">
+	<div id="header">
+	    <h1 id="headerText">Crowd-Based Psychopathy Test</h1>
+
+	    <p class="description"> The questions below reflect four facets commonly analyzed in the diagnosis of psychopathy.
+	    Although this is by no means a diagnostic test, we invite you to answer the following questions and see your scores relative to other users.</p>
+	</div>
+	<br>
+	<hr>
+	<!-- showing randomly assigned shapes p5 canvas-->
+	<div id="sketchPart">
+		<p class="caption">This is your unique shape and color.
+		Please remember it. <br>Later, you will have to pick it out of the crowd:</p>
+		<br>
+		<div id="showingShapes"></div>
+	</div>
+	<div id="inputArea">
+		<form action="save" method="get">
+
+			<!-- color assigning -->
+			<textarea id="r" name="r"></textarea>
+			<textarea id="g" name="g"></textarea>
+			<textarea id="b" name="b"></textarea>
+
+			
+			<div style="visibility:hidden">
+			<!-- Algo Data -->
+			<textarea id="facet1" name="facet1"></textarea>
+			<textarea id="facet2" name="facet2"></textarea>
+			<textarea id="facet3" name="facet3"></textarea>
+			<textarea id="facet4" name="facet4"></textarea>
+			</div>
+
+			<!-- shape assigning -->
+			<textarea id="shapes" name="shapes"></textarea>
+			<hr>
+			<br>
+			<!-- Question area -->
+			<p class="description">
+				1) Describe your thoughts about and relationships with other people.
+				<br>
+				(minimum 20 words)
+			</p>
+			<textarea class="fields" id="facet_one" name="facet_one"></textarea>
+			<br>
+			<br>
+			<br>
+
+			<p class="description">
+				<br>
+				2) Describe a time that things have gone wrong for you. How did the situation come about?
+				<br>
+				(minimum 20 words)
+			</p>
+			</text>
+			<textarea class="fields" id="facet_two" name="facet_two" ></textarea>
+			<br>
+			<br>
+			<br>
+			<br>
+
+			<!-- Question area -->
+
+			<p class="description">
+				3) Describe what you do during a typical week. <br>If things are always changing, describe some important events of this last week.
+		        <br>
+		        (minimum 20 words)
+				<br>
+			</p>
+
+
+			<textarea class="fields" id="facet_three" name="facet_three"></textarea>
+			<br>
+			<br>
+			<br>
+			<p class="description">
+				Describe any instances where you clashed with authority, or<br>were told you couldn't do something you wanted to.
+				<br>
+				(minimum 20 words)
+				<br>
+			</p>
+			<textarea class="fields" id="facet_four" name="facet_four" ></textarea>
+			<br>
+			<br>
+			<br>
+			
+	        <button id="submit" type="Submit">SUBMIT</button>
+
+	        <br>
+			<br>
+			<br>
+
+		</form>
+		<!-- <button id="calc" type="calc">Calculate</button> -->
+	</div>
+
+	<div id="showingIndResults"></div>
+</div>
+
+<!-- main p5 file -->
+<script src="sketch.js"></script>
+</body>

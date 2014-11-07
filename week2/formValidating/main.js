@@ -22,7 +22,7 @@ function setup(){
 	noCanvas();
 
 	//////// inputs ///////////////
-	// inferring the html elements
+	// referring the html elements
 	email = getElement("emailAddress");
 	phoneNumber = getElement("phoneNumber");
 	zipCode = getElement("zipCode");

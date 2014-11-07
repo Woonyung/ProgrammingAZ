@@ -17,7 +17,7 @@ var inputText,
 function setup(){
 	noCanvas();
 
-	// inferring the html elements
+	// referring the html elements
 	inputText = getElement("inputText");
 	translateButton = getElement("translate");
 	translateButton.mousePressed(generatePoops);
